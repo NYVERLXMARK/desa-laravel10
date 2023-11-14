@@ -39,6 +39,10 @@
                     </a>
                 </div>
             </div>
+            <br><br>
+        </div>
+        <div class="container">
+            {!!nl2br($footer->maps)!!}
         </div>
     </div>
     <!-- Category End -->

@@ -61,7 +61,7 @@ public function index(){
  $data['list_layanan'] = WpLayanan::where('opd_id', 564)->where('flag_erase',1)->get();
  $data['list_vidio'] = WpVidio::where('opd_id', 564)->where('flag_erase',1)->get();
  $data['list_footer'] = WpFooter::where('opd_id', 578)->where('flag_erase',1)->first();
- $data['list_pegawai'] = Sintaripegawai::where('pegawai_opd_gabung', 578)->where('status','PNS AKTIF')->take(6)->get();
+ $data['list_pegawai'] = Sintaripegawai::where('pegawai_opd_gabung', 578)->where('status','PNS AKTIF')->take(9)->get();
  $data['tentang'] = WpProfil::where('opd_id', 578)->where('flag_erase',1)->first();
  $data['visimisi'] = WpProfil::where('opd_id', 578)->where('flag_erase',1)->first();
 
@@ -155,7 +155,7 @@ function serviceDelivery(){
  $data['list_galeri'] = WpGaleriFoto::where('opd_id', 564)->where('flag_erase',1)
  ->where('kategori',2)
  ->orderByDesc('id')->get();
- $data['publikasi'] = WpPublikasi::where('opd_id', 564)->where('kategori_publikasi',2)->where('flag_erase',1)->get();
+ $data['publikasi'] = WpPublikasi::where('opd_id', 567)->where('kategori_publikasi',2)->where('flag_erase',1)->get();
  return view('publikasi.service',$data);
 }
 
@@ -231,7 +231,7 @@ function standarPelayanan(){
 
  $data['list_berita'] = WpBerita::where('opd_id', 564)->where('flag_erase',1)->get();
  $data['list_footer'] = WpFooter::where('opd_id', 564)->where('flag_erase',1)->get();
- $data['publikasi'] = WpPublikasi::where('opd_id', 564)->where('kategori_publikasi',2)->where('flag_erase',1)->get();
+ $data['publikasi'] = WpPublikasi::where('opd_id', 567)->where('kategori_publikasi',2)->where('flag_erase',1)->get();
  return view('publikasi.standarPelayanan',$data);
 }
 
@@ -241,7 +241,7 @@ function dokumenKinerja(){
 
  $data['list_berita'] = WpBerita::where('opd_id', 564)->where('flag_erase',1)->get();
  $data['list_footer'] = WpFooter::where('opd_id', 564)->where('flag_erase',1)->get();
- $data['publikasi'] = WpPublikasi::where('opd_id', 564)->where('kategori_publikasi',3)->where('flag_erase',1)->get();
+ $data['publikasi'] = WpPublikasi::where('opd_id', 567)->where('kategori_publikasi',3)->where('flag_erase',1)->get();
  return view('publikasi.dokumenKinerja',$data);
 }
 
@@ -325,7 +325,8 @@ function informasiBaca(WpInformasi $informasi){
 
 function kontak(){
   $data['opd'] = WpHeader::where('opd_id',564)->first();
-  $data['footer'] = WpHeader::where('opd_id',564)->first();
+ $data['footer'] = WpFooter::where('opd_id', 578)->where('flag_erase',1)->first();
+//   $data['footer'] = WpHeader::where('opd_id',578)->first();
   $data['list_berita'] = WpBerita::where('opd_id', 564)->where('flag_erase',1)->get();
   $data['list_footer'] = WpFooter::where('opd_id', 578)->where('flag_erase',1)->first();
   return view('kontak.kontak',$data);

@@ -19,7 +19,7 @@
                                         @foreach ($publikasi as $publik)
                                             <tr>
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td><a href="" target="_blank">{{ $publik->judul_publikasi }}</a></td>
+                                                <td><a href="{{url('dokumen-publik', $publik->slug)}}" target="_blank">{{ $publik->judul_publikasi }}</a></td>
                                             </tr>
                                         @endforeach
                                     </tbody>
