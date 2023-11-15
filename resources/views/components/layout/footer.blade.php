@@ -7,10 +7,10 @@
                 <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>{{$footer->phone}}</p>
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i>{{$footer->email}}</p>
                 <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.x.com/nyverl/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/RNGlory.ID" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@N0tMucH" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in" target="_blank"></i></a>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -20,11 +20,11 @@
                 <a class="btn btn-link text-white-50" href="http://kantorkite.ketapangkab.go.id/" target="_blank">Kantor Kite</a>
             </div>
             <div class="col-lg-4 col-md-6">
-                <h5 class="text-white mb-4">Photo Gallery</h5>
+                <h5 class="text-white mb-4">Galeri Foto</h5>
                 <div class="row g-2 pt-2">
                     @foreach ($galeri as $item)
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="http://kantorkite.ketapangkab.go.id/public/{{$item->foto}}" alt="" style="width: 100%; height:100px">
+                        <a href="{{url('galeri-foto')}}"><img class="img-fluid rounded bg-light p-1" src="http://kantorkite.ketapangkab.go.id/public/{{$item->foto}}" alt="" style="width: 100%; height:100px"></a>
                     </div>
                     @endforeach
                 </div>

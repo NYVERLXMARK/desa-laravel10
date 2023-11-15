@@ -353,6 +353,12 @@ function ppid(){
   $data['list_footer'] = WpFooter::where('opd_id', 564)->where('flag_erase',1)->get();
   $data['list_footer'] = WpFooter::where('opd_id', 564)->where('flag_erase',1)->get();
   $data['ppid'] = WpPpid::where('opd_id', 564)->first();
+
+  $ppid = $data['ppid'];
+    if ($ppid == null) {
+      return abort(404);
+    }
+
   return view('ppid.ppid',$data);
 }
 
