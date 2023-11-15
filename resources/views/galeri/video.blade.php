@@ -16,14 +16,8 @@
                         <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="property-item rounded overflow-hidden">
                                 <div class="position-relative overflow-hidden">
-                                    <iframe src="https://www.youtube.com/embed/{{$vidio->link}}" frameborder="0" style="width: 100%; height: 400px; object-fit: cover;"></iframe>
-                                </div>
-                                {{-- <div class="p-4 pb-0">
-                                    <a class="d-block h5 mb-2" href="">{{$vidio->judul}}</a>
-                                    <p></p>
-                                </div> --}}
-                                <div class="d-flex border-top">
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar text-primary me-2"></i>{{$vidio->created_at->translatedFormat('d F Y')}}</small>
+                                    {{-- <a href="https://www.youtube.com/embed/{{$vidio->link}}" id="video{{$vidio->id}}"> --}}
+                                    <iframe src="https://www.youtube.com/embed/{{$vidio->link}}" frameborder="0" style="width: 100%; height: 400px;"></iframe>                                    </a>
                                 </div>
                             </div>
                         </div>

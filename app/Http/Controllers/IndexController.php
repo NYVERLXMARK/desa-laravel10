@@ -167,6 +167,9 @@ function galeriVidio(){
  $data['list_berita'] = WpBerita::where('opd_id', 564)->where('flag_erase',1)->get();
  $data['list_footer'] = WpFooter::where('opd_id', 564)->where('flag_erase',1)->get();
  $data['list_vidio'] = WpVidio::where('opd_id', 533)->where('flag_erase',1)->orderByDesc('id')->get();
+ $data['list_galeri'] = WpGaleriFoto::where('opd_id', 567)->where('flag_erase',1)
+ ->where('kategori',1)
+ ->orderByDesc('id')->get();
  return view('galeri.video',$data);
 }
 
