@@ -379,6 +379,7 @@ function faq(){
   $data['opd'] = WpHeader::where('opd_id',564)->first();
   $data['list_footer'] = WpFooter::where('opd_id', 564)->where('flag_erase',1)->get();
   $data['list_faq'] = WpFaq::where('faq_opd', 578)->where('flag_erase',1)->get();
+ $data['tentang'] = WpProfil::where('opd_id', 578)->where('flag_erase',1)->first();
   return view('faq.faq', $data);
 }
 
