@@ -38,14 +38,15 @@ class IndexController extends Controller
 
  function base(){
   $data['list_slider'] = WpSlider::where('opd_id', 567)->where('flag_erase',1)->get();
-  $data['list_hero'] = WpProfil::where('opd_id', 564)->where('flag_erase',1)->get();
-  $data['list_profil'] = WpProfil::where('opd_id', 564)->where('flag_erase',1)->get();
-  $data['list_berita'] = WpBerita::where('opd_id', 564)->where('flag_erase',1)->get();
-  $data['list_layanan'] = WpLayanan::where('opd_id', 564)->where('flag_erase',1)->get();
-  $data['list_vidio'] = WpVidio::where('opd_id', 564)->where('flag_erase',1)->get();
-  $data['list_footer'] = WpFooter::where('opd_id', 564)->where('flag_erase',1)->get();
+  $data['list_hero'] = WpProfil::where('opd_id', 567)->where('flag_erase',1)->get();
+  $data['list_profil'] = WpProfil::where('opd_id', 567)->where('flag_erase',1)->get();
+  $data['list_berita'] = WpBerita::where('opd_id', 567)->where('flag_erase',1)->get();
+  $data['list_layanan'] = WpLayanan::where('opd_id', 567)->where('flag_erase',1)->get();
+  $data['list_vidio'] = WpVidio::where('opd_id', 567)->where('flag_erase',1)->get();
+  $data['list_footer'] = WpFooter::where('opd_id', 567)->where('flag_erase',1)->get();
+  $data['list_galeri'] = WpGaleriFoto::where('opd_id', 567)->where('flag_erase',1)->where('kategori',1)->orderByDesc('id')->take(6)->get();
 
-  return view('index',$data);
+  return view('components.app',$data);
 }
 
 public function index(){

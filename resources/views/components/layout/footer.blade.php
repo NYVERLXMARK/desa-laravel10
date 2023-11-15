@@ -3,9 +3,9 @@
         <div class="row g-5">
             <div class="col-lg-4 col-md-6">
                 <h5 class="text-white mb-4">Get In Touch</h5>
-                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jl. DI Panjaitan No.51, Sampit, Kec. Delta Pawan, Kabupaten Ketapang, Kalimantan Barat 78811</p>
-                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>080000000000</p>
-                <p class="mb-2"><i class="fa fa-envelope me-3"></i>rsudagoesdjam@ketapangkab.go.id</p>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>{{$footer->alamat}}</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>{{$footer->phone}}</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>{{$footer->email}}</p>
                 <div class="d-flex pt-2">
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -22,24 +22,11 @@
             <div class="col-lg-4 col-md-6">
                 <h5 class="text-white mb-4">Photo Gallery</h5>
                 <div class="row g-2 pt-2">
+                    @foreach ($galeri as $item)
                     <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/property-1.jpg" alt="">
+                        <img class="img-fluid rounded bg-light p-1" src="http://kantorkite.ketapangkab.go.id/public/{{$item->foto}}" alt="" style="width: 100%; height:100px">
                     </div>
-                    <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/property-2.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/property-3.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/property-4.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/property-5.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img class="img-fluid rounded bg-light p-1" src="img/property-6.jpg" alt="">
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

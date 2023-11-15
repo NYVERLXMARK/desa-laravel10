@@ -15,6 +15,7 @@ use App\Http\Controllers\IndexController;
 |
 */
 
+Route::get('app', [IndexController::class, 'base']);
 Route::get('/', [IndexController::class, 'index']);
 Route::get('tentang', [IndexController::class, 'tentang']);
 Route::get('visi-dan-misi', [IndexController::class, 'visiMisi']);
