@@ -1,6 +1,20 @@
 <x-app>
     <!-- About Start -->
     <div class="container-xxl py-5">
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <div class="col-md p-5 mt-lg-5">
+                    <h1 class="display-5 animated fadeIn mb-4">Berita</h1>
+                    <nav aria-label="breadcrumb animated fadeIn">
+                        <ol class="breadcrumb text-uppercase">
+                            <li class="breadcrumb-item"><a href="{{'/'}}">Beranda</a></li>
+                            <li class="breadcrumb-item"><a href="{{'/berita'}}">Berita</a></li>
+                            <li class="breadcrumb-item text-body active" aria-current="page">{{$berita->judul}}</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row g-5 align-items-center">
                 <div class="col-lg wow fadeIn" data-wow-delay="0.5s">

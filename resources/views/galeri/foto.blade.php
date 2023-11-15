@@ -16,14 +16,9 @@
                         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="property-item rounded overflow-hidden">
                                 <div class="position-relative overflow-hidden">
-                                    <a href=""><img class="img-fluid" src="http://kantorkite.ketapangkab.go.id/public/{{$galeri->foto}}" alt="" style="width: 100%; height: 350px; object-fit: cover;"></a>
-                                </div>
-                                {{-- <div class="p-4 pb-0">
-                                    <a class="d-block h5 mb-2" href="">{{$galeri->judul}}</a>
-                                    <p></p>
-                                </div> --}}
-                                <div class="d-flex border-top">
-                                    <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar text-primary me-2"></i>{{$galeri->created_at->translatedFormat('d F Y')}}</small>
+                                    <a href="http://kantorkite.ketapangkab.go.id/public/{{$galeri->foto}}" data-lightbox="gallery">
+                                        <img class="img-fluid" src="http://kantorkite.ketapangkab.go.id/public/{{$galeri->foto}}" alt="" style="width: 100%; height: 350px; object-fit: cover;">
+                                    </a>
                                 </div>
                             </div>
                         </div>
