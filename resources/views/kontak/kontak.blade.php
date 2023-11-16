@@ -39,7 +39,7 @@
                     </a>
                 </div>
             </div>
-            <br><br>
+            <br>
         </div>
         <div class="container">
             {!!nl2br($footer->maps)!!}

@@ -1,10 +1,11 @@
 <x-app>
-    <!-- Testimonial Start -->
+    <!-- Visi dan Misi Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h1 class="mb-3">Visi dan Misi</h1>
-                <p>{!!nl2br($visimisi->judul)!!}</p>
+                <hr>
+                <p>{!!nl2br($footer->nama)!!}</p>
             </div>
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item bg-light rounded p-3">
@@ -22,5 +23,5 @@
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
+    <!-- Visi dan Misi End -->
 </x-app>
