@@ -16,8 +16,9 @@
                         <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="property-item rounded overflow-hidden">
                                 <div class="position-relative overflow-hidden">
-                                    {{-- <a href="https://www.youtube.com/embed/{{$vidio->link}}" id="video{{$vidio->id}}"> --}}
-                                    <iframe src="https://www.youtube.com/embed/{{$vidio->link}}" frameborder="0" style="width: 100%; height: 400px;"></iframe>                                    </a>
+                                    <iframe src="https://www.youtube.com/embed/{{$vidio->link}}"
+                                        frameborder="0" style="width: 100%; height: 400px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+                                        ></iframe>
                                 </div>
                             </div>
                         </div>
