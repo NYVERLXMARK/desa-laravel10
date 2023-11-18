@@ -6,12 +6,11 @@
                 <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>{{$footer->alamat}}</p>
                 <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>{{$footer->phone}}</p>
                 <p class="mb-2"><i class="fa fa-envelope me-3"></i>{{$footer->email}}</p>
-                <div class="d-flex pt-2">
+                {{-- <div class="d-flex pt-2">
                     <a class="btn btn-outline-light btn-social" href="https://www.x.com/nyverl/" target="_blank"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/RNGlory.ID" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/@N0tMucH" target="_blank"><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in" target="_blank"></i></a>
-                </div>
+                </div> --}}
             </div>
             <div class="col-lg-4 col-md-6">
                 <h5 class="text-white mb-4">Link Terkait</h5>
@@ -35,7 +34,7 @@
         <div class="copyright">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <span><strong>Copyright &copy; 2023 @if(date("Y") > '2023') - {{date("Y")}} @endif by <a href="https://www.instagram.com/nyverl/" target="_blank"> Nur Rahman</a></strong></span>
+                    <span><strong>Copyright &copy; 2023 @if(date("Y") > '2023') - {{date("Y")}} @endif by {{$opd->nama_website}}</strong></span>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <div class="footer-menu">

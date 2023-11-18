@@ -7,7 +7,7 @@
                 <hr>
                 <p>{!!nl2br($footer->nama)!!}</p>
             </div>
-            <div class="row g-5 align-items-center">
+            <div class="row g-5 align-items-center text-center">
                 <div class="col-lg wow fadeIn" data-wow-delay="0.5s">
                     <p class="mb-4">{!!nl2br($maklumat->maklumat)!!}</p>
                 </div>
